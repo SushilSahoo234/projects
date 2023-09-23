@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer BuyNow-StyleMe</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html"><div class="logo"><img src="./imgs/logo.png" width="125px"></a> 
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <li class="cart">
+
+                <ion-icon name="basket"></ion-icon><span> 0</span>
+            </li>
+            <a href="cart.html"><img src="imgs/atc.png" width="35px" height="35px"></a> 
+            <img src="imgs/menu-removebg-preview.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+ <!-- ------------ title -----------  -->
+ <div class="small-container">
+    <div class="row row-2">
+        <h2>The Featured Product</h2>
+    </div>
+ </div>
+ <!-- ---------------------------- Buy now -----------------------  -->
+ <div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="imgs/smart1.jpg" width="100%" id="productImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="imgs/exclusive-removebg-preview.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="imgs/smart2.jpg" width="100%" class="small-img" width="10%">
+                </div>
+                <div class="small-img-col">
+                    <img src="imgs/smart3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="imgs/smart4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="col-2">
+            <p>Smart Band</p>
+            <h1>Watch for Men/Women</h1>
+            <h4>$140.00</h4>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to cart</a>
+            <h3>Product Detail <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>This Watch can do what your other devices can't because it's on your wrist. When you wear it, you get a fitness partner that measures all the ways you move, meaningful health insights, and a connection to the people and things you care about most. And it's always just a glance away.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- --------- footer --------  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App on Playstore and AppStore</p>
+                    <div class="app-logo">
+                        <img src="imgs/google.png" style="margin: 44px 3px;">
+                        <img src="imgs/app.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="imgs/logo.png" style="filter: brightness(0) invert(1);">
+                    <p>Be Fashionable with StyleMe Right Now</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright©StyleMe.com</p>
+        </div>
+    </div>
+    <!-- -------------- Js for toggle menu ------------  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+<!-- ----------------- js for product gallery ------------  -->
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+        
+</script>
+    <script src="https://kit.fontawesome.com/02fca4d6d7.js" crossorigin="anonymous"></script>
+     <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart-StyleMe</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">
+                <div class="logo"><img src="./imgs/logo.png" width="125px">
+            </a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <li class="cart">
+            <a href="cart.html"><ion-icon name="basket"></ion-icon><span> 0</span></a>
+        </li>
+        <a href="cart.html"><img src="imgs/atc.png" width="35px" height="35px"></a>
+        <img src="imgs/menu-removebg-preview.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    <!-- ------------------- cart item details -------------  -->
+    <!-- <div class="small-container cart-page">
+    <table>
+         <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+         </tr>
+         <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="imgs/tshirt5.png" >
+                    <div>
+                    <p>Women T-Shirt by H&M</p>
+                    <small>$40.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="imgs/shoes3.png" >
+                        <div>
+                        <p>Nike Sports Shoes</p>
+                        <small>$100.00</small>
+                        <br> 
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+                    </td>
+                    <td><input type="number" value="1"></td> -->
+    <!-- <td>$100.00</td> -->
+    <!-- </tr> -->
+    <!-- <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="imgs/watch1.jpeg" >
+                            <div>
+                            <p>Watch for Men</p>
+                            <small>$60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div> 
+                    </div>
+                        </td>
+                         <td><input type="number" value="1"></td> -->
+    <!-- <td>$60.00</td> -->
+    <!-- </tr> -->
+    <!-- </table>
+     <div class="total-price">
+        <table>
+            <tr>
+                <td>SubTotal</td>
+                 <td>$250.00</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!-- <td>Tax</td> -->
+    <!-- <td>$25.00</td> -->
+    <!-- </tr> -->
+    <!-- <tr> -->
+    <!-- <td>Total</td> -->
+    <!-- <td>$275.00</td> -->
+    <!-- </tr> -->
+    <!-- </table> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- --------- footer --------  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App on Playstore and AppStore</p>
+                    <div class="app-logo">
+                        <img src="imgs/google.png" style="margin: 44px 3px;">
+                        <img src="imgs/app.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="imgs/logo.png" style="filter: brightness(0) invert(1);">
+                    <p>Be Fashionable with StyleMe Right Now</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>
+                            <instagram< /li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright©StyleMe.com</p>
+        </div>
+    </div>
+    <!-- -------------- Js for toggle menu ------------  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <!-- ------------------------- Cart adding removing -------------------  -->
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/02fca4d6d7.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

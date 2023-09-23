@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style-me</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="./imgs/logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                
+                <span>0</span>
+                <a href="cart.html"><img src="imgs/atc.png" width="35px" height="35px"></a>
+                <img src="imgs/menu-removebg-preview.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Every Odd Is A <br> Fashion!</h1>
+                    <p>"Fashion is about dressing according to what's fashionable. <br> Style is more about being
+                        yourself."</p>
+                    <a href="product.html" class="btn">Explore Now &#10132;</a>
+                </div>
+                <div class="col-2">
+                    <img src="imgs/bg.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------- Featured catagories ---------->
+    <div class="catagories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="imgs/pants1.jpeg">
+                </div>
+                <div class="col-3">
+                    <img src="imgs/pants2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="imgs/pants3.jpg" style="width: 166px;
+                margin: 12px 94px;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ------------- Featured products ----------- -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="productdetails.html"><img src="imgs/tshirt1 (1).png"></a>
+                <a href="productdetails.html"><h4>T-shirt for women</h4></a>    
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/shoes1.jpg" style="margin: 57px 11px;">
+                <h4>Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$33.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/watch1.jpeg" style="margin: 17px -16px;">
+                <h4>Unisex Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/shirt1.jpg" style="margin: -3px 0px;">
+                <h4>T-shirt for Men</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+        </div>
+        <!-- --------- Latest products --------- -->
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/tshirt5.png">
+                <h4>T-shirt for women</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/shoes3.png" style="margin: 118px 11px;">
+                <h4>Sports Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$33.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/watch2.jpeg" style="margin: -6px -2px; width: 92%;">
+                <h4>Unisex Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/shirt2.jpeg" style="margin: -3px 0px;">
+                <h4>OverSized Tees</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+        </div>
+        <!-- -------- latest products2 --------  -->
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/shirts3.jpg">
+                <h4>Blue-Shirt for men</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/shocks.jpg" style="margin: 60px 11px;">
+                <h4>Sports Shocks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$33.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/braclets.jpg" style="margin: 71px -2px; width: 92%;">
+                <h4>Girls Braclets</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$40.00</p>
+            </div>
+            <div class="col-4">
+                <img src="imgs/os.jpg" style="margin: 26px 0px;">
+                <h4>OverSized Tees</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------- offer --------  -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="imgs/exclusive-removebg-preview.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on StyleMe</p>
+                    <h1>Noise health band 3</h1>
+                    <small>Find your perfect match With the all new (Noise health band 3)Amoled Color dislay with
+                        full-touch screen and adjustable brightness,Clear as ever as a sunnyday</small>
+
+                    <div><a href="buynow.html" class="btn">Buy Now! &#10148;</a></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------- Testimonial ---------  -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"Discovering this fashion page has been an absolute game-changer for me! As someone who always
+                        struggled to find their unique style, this platform has become my go-to source for inspiration
+                        and guidance. The content is not only beautifully curated but also incredibly diverse, catering
+                        to a wide range of tastes and preferences. From trendy streetwear to elegant evening wear,
+                        they've got it all covered!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="imgs/1.jpg">
+                    <h3>Rohan singh</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>What I appreciate the most about this fashion page is their emphasis on inclusivity and body
+                        positivity. They showcase real people rocking their outfits, which has empowered me to embrace
+                        my own individuality without any reservations. The styling tips and fashion hacks they share are
+                        practical and easy to implement, making my daily outfit choices so much more exciting.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="imgs/2.jpg">
+                    <h3>Salina Khan</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Moreover, they regularly feature sustainable and ethical fashion brands, which aligns perfectly
+                        with my values as a conscious consumer. I've discovered so many fantastic eco-friendly labels
+                        through their recommendations, and it feels incredible to support businesses that care about the
+                        planet.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="imgs/3.png">
+                    <h3>Lina Paul</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------- brands --------  -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="imgs/company logo2.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/logo3-removebg-preview.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/company1-removebg-preview.png" style="width: 222%; margin: 0px -34px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- footer --------  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App on Playstore and AppStore</p>
+                    <div class="app-logo">
+                        <img src="imgs/google.png" style="margin: 44px 3px;">
+                        <img src="imgs/app.png" >
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="imgs/logo.png" style="filter: brightness(0) invert(1);">
+                    <p>Be Fashionable with StyleMe Right Now</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright©StyleMe.com</p>
+        </div>
+    </div>
+    <!-- -------------- Js for toggle menu ------------  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/02fca4d6d7.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
